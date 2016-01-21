@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Hello and Welcome"
+date:   2015-12-14 16:04:52
+categories: news
+---
+Hello and welcome to the new Lunar Rabbit Blog!
+
+We have plenty of work planned for future, but being full time students at Drexel, we each also have demanding schedules filled with classes and other commitments. As a result, during the production of Starbright, we found that more than the work itself, keeping the project on track was the hardest part!  Hopefully, this blog will help with that. 
+
+This blog will be used to keep everyone up to date, and by having an audience to our progress, we'll be given an extra bit of urgency to keep us moving. Being able to share our work and contribute to the game development community is a nice bonus too!
+
+For our current state of affairs, we have two projects ongoing simultaneously.
+
+The first is a planned update to Starbright, which will include new music and new gameplay modes. More details will be laid out in a future post.
+
+The second is a brand new project! We are ramping up another project, currently dubbed "Heartline". Narratively heavier than our previous game, Heartline is a combination of endless runners and choice based adventure games. We're excited to share the full report soon!
+
+We plan to post here at least once a week, rotating through the members of the team and sharing what progress we have made. Beyond weekly progress reports, any exciting news will be shared here as well, so keep checking and stay updated!

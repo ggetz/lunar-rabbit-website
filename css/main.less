@@ -1,0 +1,184 @@
+@body: 'Open Sans', sans-serif;
+@brand: 'Amatic SC', cursive;
+@base-size: 14pt;
+@base-line-height: 1.5;
+
+@radius: 5px;
+
+@white: #FFFFFF;
+@dark: #444349;
+@darker: #2C2C2F;
+@gray: #757783;
+@light: #DDE9F5;
+@black: #070709;
+@accent: #7096C5;
+
+@bg-url: '../img/stardust.png';
+
+.transition {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+body {
+  font-family: @body;
+  font-size: @base-size;
+  background: url(@bg-url);
+  background-attachment: fixed;
+  color: @white;
+}
+
+a {
+  color: @accent;
+}
+
+h1 {
+  font-family: @brand;
+  font-size: 48pt;
+  font-weight: 600;
+}
+
+.accent {
+  color: @accent;
+}
+h3 {
+  color: @gray;
+}
+
+.navbar {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-family: @brand;
+  font-size: 20pt;
+  font-weight: 600;
+  .navbar-brand, .navbar-nav {
+    padding: 15px;
+    text-shadow: 1px 1px 3px @black;
+    color: @light;
+    .transition;
+    &:hover, &:focus {
+      color: @white;
+    }
+    img {
+      max-height: 25px;
+      display: inline-block;
+    }
+    li > a {
+      text-shadow: 1px 1px 3px @black;
+      color: @light;
+      .transition;
+      &:hover, &:focus {
+        color: @white;
+      }
+    }
+
+    .dropdown {
+      &.open {
+        a {
+          background: none;
+          color: @white;
+        }
+      }
+      .dropdown-menu {
+        background: @darker;
+        border-radius: @radius;
+        padding: 10px;
+        margin-top: 15px;
+        font-family: @body;
+        text-shadow: none;
+
+        li > a {
+          color: @light;
+          .transition;
+          &:hover {
+            color: @white;
+          }
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          border-style: solid;
+          border-width: 0 15px 15px;
+          border-color: @darker transparent;
+          display: block;
+          width: 0;
+          z-index: 1;
+          margin-left: -15px;
+          top: -15px;
+          left: 75%;
+        }
+      }
+    }
+  }
+}
+
+.bubble {
+  background: @dark;
+  border-radius: @radius;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: @light;
+  &:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 15px 15px;
+    border-color: @dark transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-left: -15px;
+    top: -15px;
+    left: 25%;
+  }
+}
+
+.homepage {
+  .header {
+    text-align: center;
+    margin: 100px;
+    .logo {
+      height: 250px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .content {
+    background: @white;
+    color: @dark;
+    padding: 40px 60px;
+    .section {
+      margin-top: 45px;
+    }
+  }
+  .posts {
+    margin: 25px 60px;
+  }
+  .post-list {
+    .bubble {
+      min-width: 300px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .post-meta {
+      color: @gray;
+      font-size: 11pt;
+    }
+    .post-link {
+      font-family: @brand;
+      font-size: 20pt;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    p {
+      color: @light;
+      font-size: 10pt;
+    }
+  }
+}
