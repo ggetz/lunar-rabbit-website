@@ -6,3 +6,6 @@ script:
   - npm install -g less
   - lessc css/main.less css/main.css
   - jekyll build
+after_success:
+  - cd _site/ 
+  - "find . -type f -exec curl -u $FTP_USER:$FTP_PASS --ftp-create-dirs -T {} $FTP_URL{} \;"
