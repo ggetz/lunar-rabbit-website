@@ -12,6 +12,7 @@
 @light: #DDE9F5;
 @black: #070709;
 @accent: #7096C5;
+@accent2: #9E70C4;
 
 @bg-url: '../img/stardust.png';
 
@@ -179,6 +180,43 @@ h3 {
     p {
       color: @light;
       font-size: 10pt;
+    }
+  }
+}
+
+.post {
+  color: @dark;
+  text-align: center;
+  background-color: @white;
+  background-image: url('../img/logos/house_light.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-top: 60px;
+  .post-title {
+    color: @accent;
+    margin-bottom: 0;
+  }
+  .post-meta {
+    color: lighten(@gray, 20%);
+    font-size: 11pt;
+  }
+  .post-content {
+    text-align: left;
+    margin: 30px 0 60px 0;
+    p, li {
+      font-size: 10pt;
+      line-height: 160%;
+      margin: 0 0 18px;
+    }
+    li {
+      margin-bottom: 3px;
+      color: @accent2;
+    }
+    a {
+      color: @accent;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
