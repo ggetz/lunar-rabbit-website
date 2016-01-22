@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Hello and Welcome"
-date:   2015-12-14 16:04:52
+title: "Hello and Welcome"
+date: 2015-12-14 16:04:52
 categories: news
+author: Gabby Getz
 ---
 Hello and welcome to the new Lunar Rabbit Blog!
 
