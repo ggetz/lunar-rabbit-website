@@ -7,21 +7,17 @@ layout: default
       <img class="logo" src="img/lunarRabbitLogo.png" />
     </div>
   </div>
-  <div class="row section">
-    <div class="col-lg-12 content">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h1 class="accent">Who we are</h1>
-          {{ site.description }}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h1 class="accent">See what we've been working on</h1>
-        </div>
-      </div>
+  <div class="row content">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1 class="accent">Who we are</h1>
+      {{ site.description }}
+      <h1 class="accent">See what we've been working on</h1>
+      Get the latest from the Lunar Rabbit development team on our blog.
       <div class="row posts">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-md-3"> <br/>
+          <img src="img/logos/rabbit_light.png" />
+        </div>
+        <div class="col-md-9">
           <div class="post-list">
             {% for post in site.posts %}
             <div class="bubble right">
@@ -29,7 +25,7 @@ layout: default
               <h2>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </h2>
-              <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+              <p>{{ post.content | strip_html | truncatewords:30 }}</p>
             </div>
             {% endfor %}
           </div>
