@@ -7,8 +7,8 @@ tags: [Heartline]
 author: Laura Mo
 ---
 
-[titleLogo]: ../logos/HeartlineLogo.png
-[heartlineArt]: ../posts/HeartlineAnnouncement/HeartlineSplash.png
+[titleLogo]: /logos/HeartlineLogo.png
+[heartlineArt]: /posts/HeartlineAnnouncement/HeartlineSplash.png
 
 This has been an announcement long overdue, but we're excited to announce Lunar Rabbit's second project!
 
