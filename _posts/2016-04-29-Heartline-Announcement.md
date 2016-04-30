@@ -14,13 +14,13 @@ author: Laura Mo
 {% elsif depth == 3 %}{% assign base = '../..' %}
 {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
 
-[titleLogo]: {{base}}/img/logos/HeartlineLogo.png
-[heartlineArt]: {{base}}/img/posts/HeartlineAnnouncement/HeartlineSplash.jpg
+[titleLogo]: ({{base}}/img/logos/HeartlineLogo.png) {: .large-image}
+[heartlineArt]: ({{base}}/img/posts/HeartlineAnnouncement/HeartlineSplash.jpg) {: .large-image}
 
 
 This has been an announcement long overdue, but we're excited to announce Lunar Rabbit's second project!
 
-![alt text] [titleLogo] {width: 500px;}
+![alt text] [titleLogo] 
 
 Set in a world where the unsetting sun has given life for as long as anyone could remember, Heartline will be a unique blend of semi-procedurally generated sidescrollers and choose your own adventure games.
 
@@ -30,4 +30,4 @@ Play as the Traveller and both control their physical body and their dopplegange
 
 Keep checking here for progress updates and insights on how we're making this world come to life!
 
-![alt text] [heartlineArt] {width: 720px;}
+![alt text] [heartlineArt]
