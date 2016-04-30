@@ -6,9 +6,17 @@ categories: news
 tags: [Heartline]
 author: Laura Mo
 ---
+<!-- _includes/base.html -->
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 1 %}
+{% if    depth == 1 %}{% assign base = '.' %}
+{% elsif depth == 2 %}{% assign base = '..' %}
+{% elsif depth == 3 %}{% assign base = '../..' %}
+{% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
 
-[titleLogo]: /logos/HeartlineLogo.png
-[heartlineArt]: /posts/HeartlineAnnouncement/HeartlineSplash.png
+[titleLogo]: {{base}}/logos/HeartlineLogo.png
+[heartlineArt]: {{base}}/posts/HeartlineAnnouncement/HeartlineSplash.png
+
 
 This has been an announcement long overdue, but we're excited to announce Lunar Rabbit's second project!
 
