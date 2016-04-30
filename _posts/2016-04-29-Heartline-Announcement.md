@@ -14,7 +14,7 @@ author: Laura Mo
 {% elsif depth == 3 %}{% assign base = '../..' %}
 {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
 
-[titleLogo]: {{base}}/img/logos/HeartlineLogo.png
+[titleLogo]: {{base}}/img/posts/HeartlineAnnouncement/HeartlineLogo.png
 [heartlineArt]: {{base}}/img/posts/HeartlineAnnouncement/HeartlineSplash.jpg
 
 
