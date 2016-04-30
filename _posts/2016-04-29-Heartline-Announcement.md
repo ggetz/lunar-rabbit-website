@@ -14,8 +14,8 @@ author: Laura Mo
 {% elsif depth == 3 %}{% assign base = '../..' %}
 {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
 
-[titleLogo]: {{base}}/logos/HeartlineLogo.png
-[heartlineArt]: {{base}}/posts/HeartlineAnnouncement/HeartlineSplash.png
+[titleLogo]: {{base}}/img/logos/HeartlineLogo.png
+[heartlineArt]: {{base}}/img/posts/HeartlineAnnouncement/HeartlineSplash.png
 
 
 This has been an announcement long overdue, but we're excited to announce Lunar Rabbit's second project!
