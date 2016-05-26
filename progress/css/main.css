@@ -1,0 +1,208 @@
+/* Color Pallette */
+/* Fonts */
+/* Image URLs */
+/* Spacing */
+body {
+  background: #FFFFFF;
+  color: #4C4B57;
+  font-family: "Open Sans", sans;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header {
+  background: url("../img/stars.png") #4C4B57 fixed;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.header .logo {
+  width: 400px;
+  margin: 0 auto;
+}
+.header .logo .header-img {
+  width: 40px;
+  margin-top: 35px;
+  display: inline-block;
+}
+.header .logo h1 {
+  color: #FFFFFF;
+  font-family: "Amatic SC", sans;
+  font-size: 45px;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0;
+}
+.header.large .header-img {
+  width: 400px;
+  margin-top: 50px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px 35px;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Amatic SC", sans;
+  font-size: 2em;
+}
+nav ul li a:hover {
+  color: #99aec5;
+}
+nav ul li.active a {
+  color: #9c99c5;
+}
+nav ul li.active:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 35px 35px 0;
+  border-color: #4C4B57 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -35px;
+  left: 20%;
+}
+.content h1 {
+  font-family: "Amatic SC", sans;
+  font-size: 3em;
+}
+.content h2,
+.content h3,
+.content h4 {
+  font-family: "Oswald", sans;
+}
+.footer {
+  background: #4C4B57;
+  color: #9796a5;
+  margin-top: 60px;
+  padding: 25px 0;
+}
+.footer .marketing-link {
+  float: right;
+  color: #9796a5;
+  padding-right: 15px;
+}
+.footer .marketing-link.email:hover {
+  color: #AED1B3;
+}
+.footer .marketing-link.tumblr:hover {
+  color: #7DC3B9;
+}
+.footer .marketing-link.facebook:hover {
+  color: #7894B3;
+}
+.footer .marketing-link.twitter:hover {
+  color: #7D78B3;
+}
+/* TEAM PAGE SPECIFIC */
+.member {
+  margin-top: 60px;
+}
+.member img {
+  width: 250px;
+  display: inline-block;
+}
+.member .info {
+  max-width: 500px;
+  display: inline-block;
+  margin: 0 0 0 45px;
+}
+.member .info h2 {
+  font-family: "Amatic SC", sans;
+  font-weight: normal;
+  font-size: 3em;
+  margin: 0;
+}
+.member .info h3 {
+  color: #7D78B3;
+  margin: 0;
+  font-weight: normal;
+}
+.member .info h4 {
+  margin: 0;
+  font-weight: normal;
+}
+.member .info .email a {
+  color: #7894B3;
+  text-decoration: none;
+}
+.member .info .website a {
+  color: #AED1B3;
+  text-decoration: none;
+}
+.member .info p {
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+.categories {
+  background: #e9e8ec;
+  padding: 20px 0;
+  margin-top: -60px;
+}
+.categories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.categories ul li {
+  display: inline-block;
+  padding: 0 15px 0 0;
+}
+.categories ul li a {
+  text-decoration: none;
+  font-family: "Oswald", sans;
+  color: #7DC3B9;
+}
+.posts {
+  padding-top: 60px;
+}
+.posts .post:not(:last-child) {
+  padding-bottom: 30px;
+}
+.posts .post h1 {
+  margin: 0;
+}
+.posts .post h2 {
+  color: #7DC3B9;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0;
+}
+.posts .post h2 a {
+  color: #7DC3B9;
+  text-decoration: none;
+}
+.posts .post h2 a:hover {
+  text-decoration: underline;
+}
+.posts .post .tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.posts .post .tags li {
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+.posts .post .tags li a {
+  font-family: "Oswald", sans;
+  color: #cecdd4;
+  text-decoration: none;
+}
+.posts .post .tags li a:hover {
+  text-decoration: underline;
+}
