@@ -16,6 +16,6 @@ author: Laura Mo
 
 We went to the GameFest 2016 at Rensselaer Polytechnic Institute on Saturday and we're happy to announce that Starbright won a prize for procedurally generated content!
 
-![]({{base}}/img/posts/StarbrightRPI/Win.png)
+![](http://lunarrabbit.com/img/posts/StarbrightRPI/Win.png)
 
 There were a lot of impressive games this year, so it's a great honor that Starbright managed to get noticed!

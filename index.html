@@ -1,36 +1,75 @@
 ---
 layout: default
+title: Lunar Rabbit
 ---
-<div class="container-fluid homepage">
-  <div class="row">
-    <div class="col-lg-12 header">
-      <img class="logo" src="img/lunarRabbitLogo.png" />
-    </div>
-  </div>
-  <div class="row content">
-    <div class="col-sm-6 col-sm-offset-3">
-      <h1 class="accent">Who we are</h1>
-      {{ site.description }}
-      <h1 class="accent">See what we've been working on</h1>
-      Get the latest from the Lunar Rabbit development team on our blog.
-      <div class="row posts">
-        <div class="col-md-3"> <br/>
-          <img src="img/logos/rabbit_light.png" />
-        </div>
-        <div class="col-md-9">
-          <div class="post-list">
-            {% for post in site.posts %}
-            <div class="bubble right">
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
-              <p>{{ post.content | strip_html | truncatewords:30 }}</p>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+<div class="header large">
+	<nav>
+		<div class="container">
+			<!-- LOGO -->
+			<div class="logo">
+				<img class="header-img" src="img/logos/lunar-rabbit-white.png">
+			</div>
+
+			<!-- NAV BAR -->
+			<ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<div class="content">
+	<div class="container">
+		<!-- Overview section -->
+		<div class="section" id="overview">
+			<img src="img/logos/rabbit_light.png">
+			<h1>Who are we?</h1>
+			<p>Lunar Rabbit Games is an independent game studio located in Philadelphia, born out of the <a href="http://egs.excite.drexel.edu/">Entrepreneurial Game Studio</a> at Drexel University. We are a group of students across multiple disciplines looking to create unique and beautiful games.</p>
+		</div>
+	</div>
+</div>
+
+<!-- 
+	This is a separate div because I wanted to change the background color
+	and make it span across the whole page.
+ -->
+<div class="content dark">
+	<div class="container">
+		<!-- Games section -->
+		<div class="section" id="games">
+			<a href="http://lunarrabbit.com/starbright.html">
+				<div class="game" id="starbright"></div>
+			</a>
+			<a href="http://localhost:4000/news/2016/04/16/Heartline-Announcement.html">
+				<div class="game" id="heartline"></div>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="content">
+	<div class="container">
+	<!-- News section -->
+	<div class="section" id="news">
+		<h1>Get the latest</h1>
+		<p>Check out the latest from our team over at our <a href="blog.html">blog</a> for news, updates, and info on the game development process. </p>
+
+		<!-- List of latest blog posts -->
+		<div id="blogPreview">
+			<div class="bubble-list">
+				{% for post in site.posts limit:3 %}
+				<div class="bubble">
+					<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+					<h4>Posted by {{ post.author a}} on {{ post.date | date: '%B %d, %Y' }}</h4>
+					<p>{{ post.content | strip_html | truncatewords:35}} </p>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	</div>
 </div>

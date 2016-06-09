@@ -2,14 +2,45 @@
 layout: default
 ---
 
-<div class="post container-fluid">
-  <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <p class="post-meta">
-        By {{ page.author }} on {{ page.date | date: "%b %-d, %Y" }}
-      </p>
-      <div class="post-content">{{ content }}</div>
-    </div>
-  </div>
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 1 %}
+{% if    depth == 1 %}{% assign base = '.' %}
+{% elsif depth == 2 %}{% assign base = '..' %}
+{% elsif depth == 3 %}{% assign base = '../..' %}
+{% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
+
+<div class="header">
+	<nav>
+		<div class="container">
+			<!-- LOGO -->
+			<div class="logo">
+				<img class="header-img" src="{{base}}/img/logos/lunar-rabbit-white-no-text.png" alt="logo">
+				<h1>Lunar Rabbit Games</h1>
+			</div>
+
+			<!-- NAV BAR -->
+			<ul>
+				<li><a href="{{basee}}/index.html">Home</a></li>
+				<li><a href="{{basee}}/team.html">Team</a></li>
+				<li><a href="{{basee}}/games.html">Games</a></li>
+				<li class="active"><a href="{{basee}}/blog.html">Blog</a></li>
+			</ul>
+		</div>
+	</nav>
 </div>
+
+<div class="content post-heading">
+	<div class="container">
+		<h1 class="title">{{ page.title  }}</h1>
+		<h2 class="subtitle">By {{ page.author }} on {{ page.date | date: '%B %d, %Y' }}</h2>
+	</div>
+</div>
+
+<div class="content">
+	<div class="container">	
+		{{ content }}
+
+		<h3><a href="{{basee}}/blog.html"><< More Posts</a></h3>
+	</div>
+</div>
+

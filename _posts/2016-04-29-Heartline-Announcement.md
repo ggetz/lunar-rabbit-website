@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New Game!"
+title: "Announcing Heartline"
 date: 2016-04-16 8:38:24
 categories: news
 tags: [Heartline]
@@ -14,8 +14,8 @@ author: Laura Mo
 {% elsif depth == 3 %}{% assign base = '../..' %}
 {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
 
-[titleLogo]: {{base}}/img/posts/HeartlineAnnouncement/HeartlineLogo.png
-[heartlineArt]: {{base}}/img/posts/HeartlineAnnouncement/HeartlineSplash.jpg
+[titleLogo]: http://lunarrabbit.com/img/posts/HeartlineAnnouncement/HeartlineLogo.png
+[heartlineArt]: http://lunarrabbit.com/img/posts/HeartlineAnnouncement/HeartlineSplash.jpg
 
 
 This has been an announcement long overdue, but we're excited to announce Lunar Rabbit's second project!
