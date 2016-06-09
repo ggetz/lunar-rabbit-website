@@ -1,0 +1,41 @@
+- id: laura
+  name: Laura Mo
+  img: laura.jpg
+  job: Team Lead, Game Design, Programming
+  email: laura@lunarrabbit.com
+  site: https://www.cs.drexel.edu/~lm868/
+  bio: > 
+   Laura Mo is a Computer Science student at Drexel University and one 
+   of the developers and designers at Lunar Rabbit Games. She decided 
+   that she would make video games after she played Pokemon Sapphire for 
+   15 minutes in fourth grade and someone hasn't changed her mind since. 
+   She is fascinated by procedural generation and computer simulations 
+   for water. In her spare time she enjoys writing, drawing, sleeping, 
+   and eating.
+
+- id: gabby
+  name: Gabby Getz
+  img: gabby.jpg
+  job: Team Lead, Game Design, Programming
+  email: gabby@lunarrabbit.com
+  site: http://cs.drexel.edu/~gjg42
+  bio: > 
+   Gabby is also a Computer Science student at Drexel University, 
+   but with a minor in Digital Media. She is a designer, developer, and 
+   founder at Lunar Rabbit. She is interested in programming beautiful 
+   things and enjoys horror movies, dark coffee, and dying her hair 
+   strange colors.
+
+- id: amy
+  name: Amy Su
+  img: amy.jpg
+  job: Artist
+  email: amy@lunarrabbit.com
+  site: http://driftwoodwolf.com/
+  bio: > 
+   Amy is a Game Art student who should probably sleep more. She's 
+   interested in illustration, aesthetics, emotional soundtracks, and nice 
+   hair. Drawing is her passion but she likes to do a little bit of 
+   everything—someday she'll write that fantasy novel, but that day is 
+   not today! She spends her spare time thinking too much about life, 
+   the universe, and everything.

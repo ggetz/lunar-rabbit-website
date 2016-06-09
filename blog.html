@@ -1,0 +1,58 @@
+---
+layout: default
+title: 'Blog | Lunar Rabbit'
+---
+
+<div class="header">
+	<nav>
+		<div class="container">
+			<!-- LOGO -->
+			<div class="logo">
+				<img class="header-img" src="img/logos/lunar-rabbit-white-no-text.png" alt="logo">
+				<h1>Lunar Rabbit Games</h1>
+			</div>
+
+			<!-- NAV BAR -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li class="active"><a href="blog.html">Blog</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<div class="content">
+	<!-- Blog Categories -->
+	<div class="categories">
+		<div class="container">
+			<h3>Categories</h3>
+			
+			<!-- Filtering by Categories doesn't work yet, requires some js -->
+			<ul>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Development</a></li>
+				<li><a href="#">Heartline</a></li>
+				<li><a href="#">Starbright</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Blog Posts -->
+	<div class="posts">
+		<div class="container">
+
+			{% for post in site.posts %}
+			<div class="post">
+				<a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+				<h2>Posted by {{ post.author a}} on {{ post.date | date: '%B %d, %Y' }} </h2>
+				<p>
+					{{ post.content | strip_html | truncatewords:75}}
+				</p>
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</div>

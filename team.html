@@ -1,0 +1,44 @@
+---
+layout: default
+title: 'Team | Lunar Rabbit'
+---
+
+<div class="header">
+	<nav>
+		<div class="container">
+			<!-- LOGO -->
+			<div class="logo">
+				<img class="header-img" src="img/logos/lunar-rabbit-white-no-text.png">
+				<h1>Lunar Rabbit Games</h1>
+			</div>
+
+			<!-- NAV BAR -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="team.html">Team</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<div class="content">
+	<div class="container">
+
+	{% for member in site.data.team %}
+
+	<div class="member" id="{{ member.id }}">
+		<img src="img/team/{{ member.img }}" />
+		<div class="info">
+			<h2>{{ member.name }}</h2>
+			<h3>{{ member.job }}</h3>
+			<h4 class="email"><a href="mailto:{{ member.email }}"><span class="fa fa-envelope"></span> {{ member.email }}</a></h4>
+			<h4 class="website"><a href="{{ member.site }}"><span class="fa fa-link"></span> Website</a></h4>
+			<p>{{ member.bio }} </p>
+		</div>
+	</div>
+
+	{% endfor %}
+	
+	</div>
+</div>
