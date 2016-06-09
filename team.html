@@ -8,7 +8,7 @@ title: 'Team | Lunar Rabbit'
 		<div class="container">
 			<!-- LOGO -->
 			<div class="logo">
-				<img class="header-img" src="img/logos/lunar-rabbit-white-no-text.png">
+				<img class="header-img" src="img/logos/lunar-rabbit-white-no-text.png"  alt="logo">
 				<h1>Lunar Rabbit Games</h1>
 			</div>
 
@@ -28,7 +28,7 @@ title: 'Team | Lunar Rabbit'
 	{% for member in site.data.team %}
 
 	<div class="member" id="{{ member.id }}">
-		<img src="img/team/{{ member.img }}" />
+		<img src="img/team/{{ member.img }}"  alt="{{ member.name }}"/>
 		<div class="info">
 			<h2>{{ member.name }}</h2>
 			<h3>{{ member.job }}</h3>
