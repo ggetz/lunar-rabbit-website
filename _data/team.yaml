@@ -29,7 +29,7 @@
 - id: amy
   name: Amy Su
   img: amy.jpg
-  job: Artist
+  job: Artist, UI Designer
   email: amy@lunarrabbit.com
   site: http://driftwoodwolf.com/
   bio: > 
@@ -39,3 +39,42 @@
    everything—someday she'll write that fantasy novel, but that day is 
    not today! She spends her spare time thinking too much about life, 
    the universe, and everything.
+
+- id: lily
+  name: Lily Lauben
+  img: lily.jpg
+  job: Artist
+  email: lily@lunarrabbit.com
+  site:
+  bio: >
+  Lily is a freshman at Drexel University, and very honored to be the newest 
+  member of Lunar Rabbit. She is currently studying under Drexel's Custom Design 
+  Major about designing games that can do greater social good. She does also 
+  enjoy non-serious games, such as playing Magika or Starcraft or Overwatch with 
+  her boyfriend and other friends.
+
+- id: colan
+  name: Colan Biemer
+  img: colan.jpg
+  job: Programming
+  email: colan@lunarrabbit.com
+  site:
+  bio: >
+  Colan Biemer is a Computer Science student at Drexel University and one of the 
+  developers at Lunar Rabbit Games. Thanks to the famous South park episode 
+  "Make Love, Not Warcraft", Colan left Runescape and moved onto World of Warcraft. 
+  Since that moment, Colan has been obssessed with all things video games. Recently,
+  he has become engrossed in the world of big data and machine learning. 
+
+- id: bria
+  name: Bria Mears
+  img: bria.jpg
+  job: Writing
+  email: bria@lunarrabbit.com
+  site:
+  bio: > 
+  Bria is a Digital Media, M.S. student at Drexel University, with an undergraduate 
+  degree in Writing. She is a narrative designer at Lunar Rabbit; interested in 
+  forging the perfect combination of design and storytelling within beautiful 
+  games across various genres.  She is a shameless slave to hot coffee in the morning, 
+  and steaming tea in the night.
