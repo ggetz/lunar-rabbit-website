@@ -45,7 +45,6 @@
   img: lily.jpg
   job: Artist
   email: lily@lunarrabbit.com
-  site:
   bio: >
   Lily is a freshman at Drexel University, and very honored to be the newest 
   member of Lunar Rabbit. She is currently studying under Drexel's Custom Design 
@@ -58,7 +57,7 @@
   img: colan.jpg
   job: Programming
   email: colan@lunarrabbit.com
-  site:
+  site: https://www.cs.drexel.edu/~cfb43/
   bio: >
   Colan Biemer is a Computer Science student at Drexel University and one of the 
   developers at Lunar Rabbit Games. Thanks to the famous South park episode 
@@ -71,7 +70,6 @@
   img: bria.jpg
   job: Writing
   email: bria@lunarrabbit.com
-  site:
   bio: > 
   Bria is a Digital Media, M.S. student at Drexel University, with an undergraduate 
   degree in Writing. She is a narrative designer at Lunar Rabbit; interested in 
