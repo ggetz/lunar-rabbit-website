@@ -1,17 +1,19 @@
 ---
 layout: post
-title: "Heart Line Save System Part I"
-date: 2016-06-28 12:12:12
+title: "Heartline Save System Part I"
+date: 2016-09-31 12:12:12
 categories: development
 author: Colan Biemer
 ---
 
+*One of our programmers, Colan, details the process behind one of the major features of Heartline, the save system.*
+
 The first big decision for a save system is where and how you want to save the data. For Unity you have several options
-and we'll focus mainly on ```PlayerPrefs```. An altenative to ```PlayerPrefs``` would be files that are saved
+and we'll focus mainly on ```PlayerPrefs```. An alternative to ```PlayerPrefs``` would be files that are saved
 locally for use. These files could be serialized objects, JSON, XML, and more. Each of these have their advantages and 
 disadvantages that can be gone over in a future blog post. Today we'll pretend like they don't exist.
 
-For starters, why did we chooose to use ```PlayerPrefs```? One of the strengths of ```PlayerPrefs``` is how easy 
+For starters, why did we choose to use ```PlayerPrefs```? One of the strengths of ```PlayerPrefs``` is how easy 
 it is to use. For example say I want to save the current level a player is on:
 ```c#
 PlayerPrefs.SetInt("PlayerLevel", level);
@@ -38,7 +40,7 @@ where ```GameBucket``` is the name of class which is saving the information.
 
 We now have a basic understanding of how to use ```PlayerPrefs```, but we've only saved an Integer. We can also
 save other primitives, but not objects. This limitation can lead to poor design that will hamper progress
-as development movess forward. To remedy this our group had a long conversation about how we wanted saving to 
+as development moves forward. To remedy this our group had a long conversation about how we wanted saving to 
 work in the game. The most important part of the discussion was when we decided for there to be only one save rather 
 than multiple. This meant ```PlayerPrefs``` was a solid option as we could use common sense keys without having to write
 extra code to handle multiple saves. 
@@ -53,7 +55,7 @@ of an array. Look at this array:
 ```
 [1,2,3,4,5]
 ```
-We can see that it has a certain amount elemnts which we can iterate on. In ```PlayerPrefs``` it means we have to keep 
+We can see that it has a certain amount elements which we can iterate on. In ```PlayerPrefs``` it means we have to keep 
 size of the array as well as the elements. The easiest way to do this is to save the size of the array as well as each 
 element with a number associated with it. Our data ends up having the following form:
 ```
@@ -98,4 +100,4 @@ for (int i = 0; i < PlayerPrefs.GetInt(countKey, 0); ++i)
 ```
 
 We now have a save system that can save and load the level as well as the events . In the next post we'll
-go over backups and how to handle hanging memory in ```PlayerPrefs``` with this sytem. 
+go over backups and how to handle hanging memory in ```PlayerPrefs``` with this system. 
