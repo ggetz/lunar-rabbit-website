@@ -10,7 +10,7 @@ author: Laura Mo
 
 To create the continuous scrolling style that Heartline uses, we procedurally created every terrain mesh so that each piece of terrain would flow perfectly into the next. Each generated piece of terrain looks something like this:
 
-![](http://lunarrabbit.com/img/posts/TerrainGenerationPost/TerrainExample.png)
+![](http://lunarrabbit.com/img/posts/TerrainGenerationPost/TerrainExample.jpg)
 
 The `height maps` for the meshes were generated using a simple midpoint formula method. Each terrain mesh must connect to the terrain mesh pieces behind and in front of it. Thus, the starting height for the terrain piece being generated is taken from the ending height of the terrain mesh that precedes it. The ending height is randomized as the terrain piece after the current one has not yet been created.
 
