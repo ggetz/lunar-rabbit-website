@@ -10,7 +10,7 @@ author: Laura Mo
 
 To create the continuous scrolling style that Heartline uses, we procedurally created every terrain mesh so that each piece of terrain would flow perfectly into the next. Each generated piece of terrain looks something like this:
 
-![](http://lunarrabbit.com/img/posts/StarbrightRPI/Win.png)
+![](http://lunarrabbit.com/img/posts/TerrainGenerationPost/TerrainExample.png)
 
 The `height maps` for the meshes were generated using a simple midpoint formula method. Each terrain mesh must connect to the terrain mesh pieces behind and in front of it. Thus, the starting height for the terrain piece being generated is taken from the ending height of the terrain mesh that precedes it. The ending height is randomized as the terrain piece after the current one has not yet been created.
 
@@ -22,9 +22,9 @@ The midpoint—the slot whose index is halfway between the beginning and the end
 (startHeight – endHeight)/2 + Random.Range (-roughness, roughness) 
 {% endhighlight %}
 
-`(startHeight – endHeight)/2` gives the height that the midpoint should be at on a line from the start position to the end position. 
+"`(startHeight – endHeight)/2`" gives the height that the midpoint should be at on a line from the start position to the end position. 
 
-`Random.Range (-roughness, roughness)` represents the random displacement that is applied to the midpoint’s height. The greater the value of roughness, the more varied the terrain will look.
+"`Random.Range (-roughness, roughness)`" represents the random displacement that is applied to the midpoint’s height. The greater the value of roughness, the more varied the terrain will look.
 
 ![](http://lunarrabbit.com/img/posts/TerrainGenerationPost/Roughness.gif)
 
